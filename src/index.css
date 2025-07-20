@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+:root {
+    /* Warm, comforting palette for story sharing and human connection */
+    --background: 24 100% 98%;
+    --foreground: 340 12% 15%;
+
+    --card: 24 60% 96%;
+    --card-foreground: 340 12% 15%;
+
+    --popover: 24 100% 98%;
+    --popover-foreground: 340 12% 15%;
+
+    /* Warm coral primary - evokes comfort and human warmth */
+    --primary: 12 88% 65%;
+    --primary-foreground: 24 100% 98%;
+
+    /* Soft peach secondary */
+    --secondary: 25 90% 85%;
+    --secondary-foreground: 340 12% 15%;
+
+    --muted: 28 55% 92%;
+    --muted-foreground: 340 8% 55%;
+
+    /* Golden accent for special moments */
+    --accent: 45 93% 75%;
+    --accent-foreground: 340 12% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 24 100% 98%;
+
+    --border: 28 40% 88%;
+    --input: 28 40% 88%;
+    --ring: 12 88% 65%;
+
+    --radius: 1rem;
+
+    /* Custom gradients for warmth and connection */
+    --gradient-warm: linear-gradient(135deg, hsl(12, 88%, 65%), hsl(25, 90%, 75%));
+    --gradient-sunset: linear-gradient(180deg, hsl(45, 93%, 85%), hsl(12, 88%, 75%));
+    --gradient-soft: linear-gradient(135deg, hsl(25, 90%, 90%), hsl(45, 93%, 90%));
+
+    /* Shadows with warm tones */
+    --shadow-warm: 0 10px 30px -10px hsl(12 88% 65% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(25 90% 75% / 0.2);
+
+    /* Smooth transitions */
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+.dark {
+    /* Warm dark theme maintaining the cozy feeling */
+    --background: 340 25% 8%;
+    --foreground: 24 60% 92%;
+
+    --card: 340 20% 12%;
+    --card-foreground: 24 60% 92%;
+
+    --popover: 340 25% 8%;
+    --popover-foreground: 24 60% 92%;
+
+    --primary: 12 88% 65%;
+    --primary-foreground: 340 25% 8%;
+
+    --secondary: 340 15% 18%;
+    --secondary-foreground: 24 60% 92%;
+
+    --muted: 340 15% 18%;
+    --muted-foreground: 340 8% 65%;
+
+    --accent: 45 93% 75%;
+    --accent-foreground: 340 25% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 24 60% 92%;
+
+    --border: 340 15% 18%;
+    --input: 340 15% 18%;
+    --ring: 12 88% 65%;
+
+    /* Dark mode gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(12, 88%, 55%), hsl(25, 70%, 45%));
+    --gradient-sunset: linear-gradient(180deg, hsl(45, 80%, 60%), hsl(12, 88%, 55%));
+    --gradient-soft: linear-gradient(135deg, hsl(340, 20%, 15%), hsl(340, 15%, 20%));
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
