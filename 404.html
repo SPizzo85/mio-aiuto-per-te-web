@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=/mio-aiuto-per-te-web/" />
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      // Estrae l'URL richiesto e lo reindirizza alla home con hash
+      const path = location.pathname.replace('/mio-aiuto-per-te-web', '');
+      location.replace('/mio-aiuto-per-te-web/#' + path);
+    </script>
   </head>
   <body>
     <p>Redirecting...</p>
